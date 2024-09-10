@@ -3,6 +3,8 @@
 // Example:
 // let fungusHP = 100;
 
+// Declaring the state variables for player AP and fungus HP
+
 function onReady() {
     console.log("Ready to go!")
     
