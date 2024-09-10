@@ -25,6 +25,7 @@ function updateTotals(attack){
     }
     
     render();
+
 }
 
 
@@ -53,16 +54,13 @@ function starFireHandler(){
 
 // updates the player AP and fungus HP on the DOM
 function render(){
-    let apDOM = document.getElementsByClassName('ap-text')
-    apDOM.textContent = playerAP
-    console.log(apDOM.textContent)
-    let hpDOM = document.getElementsByClassName('hp-text')
-    hpDOM.textContent = fungusHP
-    console.log(hpDOM.textContent)
+    let apDOM = document.getElementById('ap-text')
+    apDOM.textContent = playerAP + ' ' + 'AP'
+    let hpDOM = document.getElementById('hp-text')
+    hpDOM.textContent = fungusHP + ' ' + 'AP'
 
     let apMeter = document.getElementById('ap-meter')
     apMeter.value = `${playerAP}`
-
     let hpMeter = document.getElementById('hp-meter')
     hpMeter.value = `${fungusHP}`
 }
